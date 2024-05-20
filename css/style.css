@@ -1,0 +1,12 @@
+:root {
+    --red-color: #E94339;
+    --primary-color: #FF5331;
+    --dark-black: #000000;
+    --light-black: #111111;
+    --lighter-black: #191720;
+    --gray-black: #494949;
+    --pink-color: #FFEFEC;
+}
+.bg-red {
+    background: var(--red-color);
+}
