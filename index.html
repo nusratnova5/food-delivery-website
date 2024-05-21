@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container ">
-    <header class="w-3/4 mx-auto mb-10">
+<body>
+    <header class="container mb-10">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -40,7 +41,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">🍕</a>
+                <a class="btn btn-ghost text-xl -rotate-45">🍕</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -60,245 +61,283 @@
                 </ul>
             </div>
             <div class="navbar-end gap-2">
-                <a class="btn bg-white margin-none border-none shadow-none">Login</a>
-                <a class="btn bg-red rounded-full">Button</a>
+                <a class="btn bg-white margin-none border-0 shadow-none">Login</a>
+                <a class="btn bg-red text-white rounded-full">Sign Up</a>
             </div>
         </div>
     </header>
-    <main class="w-3/4 mx-auto">
-        <!-- FIRST SECTION -->
-        <div class="flex items-center p-5 mb-20">
-            <div class="p-5">
-                <p class="text-4xl font-bold">Your Favorite Food <br />Delivery Partner</p>
-                <p>The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven
+    <main class="container">
+        <!-- Banner SECTION -->
+        <section class="mb-10 md:mb-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="order-2 md:order-1 p-0 md:p-8 flex flex-col items-start justify-center mb-3 md:mb-0">
+                <h1 class="text-4xl font-bold text-center md:text-left">Your Favorite Food Delivery Partner</h1>
+                <p class="my-3 text-center md:text-left">The food at your doorstep. Why starve when you have us. You hunger partner. Straight out
+                    of the oven
                     to your doorstep. </p>
-                <div class="pt-3">
-                    <div class="flex justify-between items-center bg-gray-100 rounded-full">
+                <div class="mt-3 w-full md:w-auto">
+                    <div class="relative bg-gray-100 rounded-full">
                         <div class="">
                             <input type="text" placeholder="Enter your delivery location"
                                 class="appearance-none bg-transparent border-none placeholder-gray-500 px-4 py-2 rounded-l-full focus:outline-none">
                         </div>
-                        <div>
-                            <button
-                                class="primary-color text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none">
-                                Order Now
-                            </button>
-                        </div>
+                        <button
+                            class="primary-color text-white font-semibold px-2 md:px-6 rounded-full hover:bg-red-600 focus:outline-none absolute top-0 bottom-0 right-0">
+                            Order Now
+                        </button>
                     </div>
-                    <div class="flex pt-5">
-                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
-                            <div class="flex justify-center gap-2">
-                                <p> <img src='images/First section/Apple logo.png' alt="">
-                                </p>
+                    <div class="flex flex-col items-center md:flex-row gap-4 pt-5">
+                        <div class="w-52 bg-gray-f4 p-3 rounded-2xl">
+                            <div class="flex justify-start gap-2">
+                                <div class="">
+                                    <img src='images/First section/Apple logo.png' alt="">
+                                </div>
                                 <div class="text-black-09">
                                     <p class="text-xs">Download on the</p>
-                                    <p class="text-xl font-bold">App Store</p>
+                                    <p class="text-2xl font-bold">App Store</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
-                            <div class="flex justify-center gap-2">
-                                <p> <img src='images/First section/Google Play logo.png' alt="">
-                                </p>
+                        <div class="w-52 bg-gray-f4 p-3 rounded-2xl">
+                            <div class="flex justify-start gap-2">
+                                <div class=""> <img src='images/First section/Google Play logo.png' alt="">
+                                </div>
                                 <div class="text-black-09">
                                     <p class="text-xs">GET IT ON</p>
-                                    <p class="text-xl font-bold">Google Play</p>
+                                    <p class="text-2xl font-bold">Google Play</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="p-5 bg-pink rounded-3xl">
+            <div class="order-1 md:order-2 p-5 bg-pink rounded-3xl">
                 <img src='images/First section/img1.png' alt="">
             </div>
-        </div>
-        <!-- SECOND SECTION -->
-        <div class="mb-20 grid justify-items-center">
+        </section>
+        <!-- ORDER SECTION -->
+        <div class="mb-10 md:mb-20 grid justify-items-center">
             <div class="text-center">
-                <p class="text-3xl font-semibold">MORE THAN <span class="text-primary">10,000</span> DISHES <br />TO
-                    ORDER!</p>
-                <p>Welcome to The Biggest Network of Food Ordering & Delivery</p>
+                <p class="text-3xl font-semibold mb-3">More Than <span class="text-primary">10,000</span> Dishes
+                    <br />To
+                    Order!</p>
+                <p class="mb-3">Welcome to The Biggest Network of Food Ordering & Delivery</p>
             </div>
-            <div class="flex m-2 gap-5">
-
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍕</p>
-                        <p class="px-5 py-2">Pizza</p>
+            <div class="grid grid-cols-1 md:grid-cols-7 mb-5">
+                <div class="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-5 pl-0 md:pl-52">
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🍕</p>
+                        <p class="">Pizza</p>
+                    </div>
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🍔</p>
+                        <p class="">Burger</p>
+                    </div>
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🍣</p>
+                        <p class="">Sushi</p>
                     </div>
                 </div>
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍔</p>
-                        <p class="px-5 py-2">Burger</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍣</p>
-                        <p class="px-5 py-2">Sushi</p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="">
-                        <p class="p-5 text-2xl font-medium">Find <span class="text-primary">deals</span>, <span
+                <div class="col-span-3">
+                    <div class="grid">
+                        <p class="p-5 pb-0 text-2xl font-medium">Find <span class="text-primary">deals</span>, <span
                                 class="text-green">free delivery</span>, and more from our restaurant partners.</p>
+                        <div class="place-self-end">
+                            <img src='images/Second section/Illustrations.png' alt="Bike Sticker">
 
-                    </div>
-                    <div class="place-self-end">
-                        <img src='images/Second section/Illustrations.png' class="mt-2">
-
+                        </div>
                     </div>
                 </div>
-
-
-
-
             </div>
-            <div class="flex gap-5">
-                <div class="w-1/2">
-                    <img src='images/Second section/Vector.png' class="m-5">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nemo perspiciatis possimus
-                        ratione, vero reprehenderit omnis veniam sapiente. Temporibus, illum ex! Saepe, rem. Nam
-                        doloremque alias nobis ad voluptatum. Ex!</p>
-                </div>
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍝</p>
-                        <p class="px-5 py-2">Pasta</p>
+            <div class="grid grid-cols-1 md:grid-cols-7 mb-5">
+                <div class="col-span-3 mb-3 md:mb-0">
+                    <div class="grid">
+                        <img src='images/Second section/Vector.png' class="m-5">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nemo perspiciatis possimus
+                            ratione, vero reprehenderit omnis veniam sapiente. Temporibus, illum ex! Saepe, rem. Nam
+                            doloremque alias nobis ad voluptatum. Ex!</p>
                     </div>
                 </div>
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🥗</p>
-                        <p class="px-5 py-2">Salad</p>
+                <div class="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-5 pr-0 md:pr-52">
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🍝</p>
+                        <p class="">Pasta</p>
+                    </div>
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🥗</p>
+                        <p class="">Salad</p>
+                    </div>
+                    <div class="py-3 py-0 flex flex-col items-center justify-center gap-5 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 bg-white rounded-full flex justify-center items-center">🍰</p>
+                        <p class="">Desserts</p>
                     </div>
                 </div>
-                <div>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍰</p>
-                        <p class="px-5 py-2">Desserts</p>
-                    </div>
-                </div>
-
             </div>
         </div>
-        <!-- THIRD SECTION -->
+        <!-- HOW TO ORDER SECTION -->
         <div class="mb-20 grid justify-items-center">
-            <div class="p-5">
-                <p class="text-black-2e text-2xl font-semibold">How To Order?</p>
-            </div>
-            <div class="flex gap-5">
-                <div>
-                    <p class="text-primary text-2xl font-bold">01</p>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">📍</p>
+            <h1 class="text-black-2e text-2xl font-semibold mb-8">How To Order?</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-40">
+                <div class="relative">
+                    <p class="absolute -top-6 z-0 text-primary text-3xl font-bold">01</p>
+                    <div class="grid justify-items-center bg-gray-fa rounded-lg text-center z-10 relative py-6">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-2xl">📍</p>
                         <p class="px-5 ">Choose your location</p>
                     </div>
                 </div>
-                <div>
-                    <p class="text-primary text-2xl font-bold">02</p>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🙇🏻‍♂️</p>
+                <div class="relative">
+                    <p class="absolute -top-6 z-0 text-primary text-3xl font-bold">02</p>
+                    <div class="grid justify-items-center bg-gray-fa rounded-lg text-center z-10 relative py-6">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-2xl">🙇🏻‍♂️</p>
                         <p class="px-5 py-2">Choose what to eat</p>
                     </div>
                 </div>
-                <div>
-                    <p class="text-primary text-2xl font-bold">03</p>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🍔</p>
+                <div class="relative">
+                    <p class="absolute -top-6 z-0 text-primary text-3xl font-bold">03</p>
+                    <div class="grid justify-items-center bg-gray-fa rounded-lg text-center z-10 relative py-6">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-2xl">🍔</p>
                         <p class="px-5 py-2">May your first order</p>
                     </div>
                 </div>
-                <div>
-                    <p class="text-primary text-2xl font-bold">04</p>
-                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
-                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🏠</p>
+                <div class="relative">
+                    <p class="absolute -top-6 z-0 text-primary text-3xl font-bold">04</p>
+                    <div class="grid justify-items-center bg-gray-fa rounded-lg text-center z-10 relative py-6">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-2xl">🏠</p>
                         <p class="px-5 py-2">Now your food in way</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- FOURTH SECTION -->
-        <div class="mb-20 grid justify-items-center text-center">
-            <p class="text-light-black text-3xl p-5 font-bold">Our Clients Feedback</p>
-            <p class="text-dark-black pb-5">The food at your doorstep. Why starve when you have us. You hunger <br>
-                partner. Straight out of the oven to
-                your doordtep. </p>
-            <div class="m-7">
-                <img src='images/Fourth Section/Vector.png' alt="">
-            </div>
-            <p class="text-dark-black font-semibold p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore rerum<br> reiciendis laborum ducimus,
-                dolore adipisci possimus non voluptatum dolorum laudantium <br>consequuntur ad hic laboriosam quae iure
-                quas
-                dolorem quisquam voluptatem?</p>
-            <div>
-                <p class="text-light-black font-semibold">Mitchell Marsh</p>
-                <p class="text-gray-61 pb-5">CEO, Bexon Agency</p>
-            </div>
-            <div class="flex gap-5 ">
-                <div class="rounded-full bg-gray-E2 p-2">
-                    <img src='images/Fourth Section/left.png' alt="">
+        <div class="swiper-container pb-12" style="overflow: hidden;">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="grid justify-items-center text-center">
+                        <p class="text-light-black text-3xl p-5 font-bold">Our Clients Feedback</p>
+                        <p class="text-dark-black pb-5">The food at your doorstep. Why starve when you have us. You
+                            hunger <br>
+                            partner. Straight out of the oven to
+                            your doordtep. </p>
+                        <div class="m-7">
+                            <img src='images/Fourth Section/Vector.png' alt="">
+                        </div>
+                        <p class="text-dark-black font-semibold p-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Inventore rerum<br> reiciendis laborum ducimus,
+                            dolore adipisci possimus non voluptatum dolorum laudantium <br>consequuntur ad hic
+                            laboriosam quae iure
+                            quas
+                            dolorem quisquam voluptatem?</p>
+                        <div>
+                            <p class="text-light-black font-semibold">Mitchell Marsh</p>
+                            <p class="text-gray-61 pb-5">CEO, Bexon Agency</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="rounded-full primary-color p-2">
-                    <img src='images/Fourth Section/right.png' alt="">
+                <div class="swiper-slide">
+                    <div class="grid justify-items-center text-center">
+                        <p class="text-light-black text-3xl p-5 font-bold">Our Clients Feedback</p>
+                        <p class="text-dark-black pb-5">The food at your doorstep. Why starve when you have us. You
+                            hunger <br>
+                            partner. Straight out of the oven to
+                            your doordtep. </p>
+                        <div class="m-7">
+                            <img src='images/Fourth Section/Vector.png' alt="">
+                        </div>
+                        <p class="text-dark-black font-semibold p-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Inventore rerum<br> reiciendis laborum ducimus,
+                            dolore adipisci possimus non voluptatum dolorum laudantium <br>consequuntur ad hic
+                            laboriosam quae iure
+                            quas
+                            dolorem quisquam voluptatem?</p>
+                        <div>
+                            <p class="text-light-black font-semibold">Mitchell Marsh</p>
+                            <p class="text-gray-61 pb-5">CEO, Bexon Agency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="grid justify-items-center text-center">
+                        <p class="text-light-black text-3xl p-5 font-bold">Our Clients Feedback</p>
+                        <p class="text-dark-black pb-5">The food at your doorstep. Why starve when you have us. You
+                            hunger <br>
+                            partner. Straight out of the oven to
+                            your doordtep. </p>
+                        <div class="m-7">
+                            <img src='images/Fourth Section/Vector.png' alt="">
+                        </div>
+                        <p class="text-dark-black font-semibold p-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Inventore rerum<br> reiciendis laborum ducimus,
+                            dolore adipisci possimus non voluptatum dolorum laudantium <br>consequuntur ad hic
+                            laboriosam quae iure
+                            quas
+                            dolorem quisquam voluptatem?</p>
+                        <div>
+                            <p class="text-light-black font-semibold">Mitchell Marsh</p>
+                            <p class="text-gray-61 pb-5">CEO, Bexon Agency</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </main>
     <footer>
         <!-- NEWSLETTER -->
-        <div class="h-72 bg-pink grid content-center">
-            <div class="flex justify-around items-center">
+        <div class="bg-pink py-32 grid content-center">
+            <div class="container grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="font-pop">
-                    <p class="text-3xl font-bold ">Subscribe our newsletter</p>
-                    <p>Browse local restaurants and businesses for delivery by entering your address blow.</p>
+                    <p class="text-3xl font-bold text-center md:text-left">Subscribe our newsletter</p>
+                    <p class="text-center md:text-left">Browse local restaurants and businesses for delivery by entering
+                        your address blow.</p>
                 </div>
-                <div class="flex justify-between items-center bg-gray-100 rounded-full">
-                    <div class="">
+                <div class="h-fit relative ps-0 md:ps-40 mt-10 md:mt-0">
+                    <div class="bg-gray-100 rounded-full">
                         <input type="text" placeholder="Enter your email address..."
                             class="appearance-none bg-transparent border-none placeholder-gray-500 px-4 py-2 rounded-l-full focus:outline-none">
                     </div>
-                    <div>
-                        <button
-                            class="primary-color text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none">
-                            Send
-                        </button>
-                    </div>
+                    <button
+                        class="primary-color text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none absolute top-0 right-0">
+                        Send
+                    </button>
                 </div>
             </div>
         </div>
         <footer class="flex-row p-10 bg-dark-black">
             <div class="footer mb-20">
-                <aside class="">
-                    <p class="text-4xl">🍕</p>
-                    <div class="flex">
-                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
-                            <div class="flex justify-center gap-2">
-                                <p> <img src='images/First section/Apple logo.png' alt="">
-                                </p>
+                <aside class="w-full md:w-auto">
+                    <p class="text-4xl w-full md:w-auto text-center md:text-left -rotate-45">🍕</p>
+                    <div class="flex flex-col items-center md:flex-row gap-4 pt-5 w-full md:w-auto">
+                        <div class="w-52 bg-gray-f4 p-3 rounded-2xl">
+                            <div class="flex justify-start gap-2">
+                                <div class="">
+                                    <img src="images/First section/Apple logo.png" alt="">
+                                </div>
                                 <div class="text-black-09">
                                     <p class="text-xs">Download on the</p>
-                                    <p class="text-xl font-bold">App Store</p>
+                                    <p class="text-2xl font-bold">App Store</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
-                            <div class="flex justify-center gap-2">
-                                <p> <img src='images/First section/Google Play logo.png' alt="">
-                                </p>
+                        <div class="w-52 bg-gray-f4 p-3 rounded-2xl">
+                            <div class="flex justify-start gap-2">
+                                <div class=""> <img src="images/First section/Google Play logo.png" alt="">
+                                </div>
                                 <div class="text-black-09">
                                     <p class="text-xs">GET IT ON</p>
-                                    <p class="text-xl font-bold">Google Play</p>
+                                    <p class="text-2xl font-bold">Google Play</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </aside>
-                <nav>
+                <nav class="w-full text-center md:text-left place-items-center md:place-items-start">
                     <h6 class="footer-title text-white">Quick links</h6>
                     <a class="link link-hover text-gray-b5">Features</a>
                     <a class="link link-hover text-gray-b5">Food Menu</a>
@@ -307,7 +346,7 @@
                     <a class="link link-hover text-gray-b5">Rider</a>
 
                 </nav>
-                <nav class="font-pop">
+                <nav class="w-full text-center md:text-left place-items-center md:place-items-start" class="font-pop">
                     <h6 class="footer-title text-white">Get to know us</h6>
                     <a class="link link-hover text-gray-aa">Gift Cards</a>
                     <a class="link link-hover text-gray-aa">DoorDash Stories</a>
@@ -315,7 +354,7 @@
                     <a class="link link-hover text-gray-aa">Glassdoor</a>
                     <a class="link link-hover text-gray-aa">Accessibility</a>
                 </nav>
-                <nav>
+                <nav class="w-full text-center md:text-left place-items-center md:place-items-start">
                     <h6 class="footer-title text-white">News</h6>
                     <a class="link link-hover text-gray-b5">Blog</a>
                     <a class="link link-hover text-gray-b5">FAQ</a>
@@ -324,15 +363,15 @@
                     <a class="link link-hover text-gray-b5">Press kit</a>
 
                 </nav>
-                <nav class="font-pop">
+                <nav class="font-pop w-full text-center md:text-left place-items-center md:place-items-start">
                     <h6 class="footer-title text-white">Contact</h6>
                     <a class="link link-hover text-gray-aa">WhatsApp</a>
                     <a class="link link-hover text-gray-aa">Support 24</a>
                 </nav>
             </div>
             <div class="footer mb-10 text-gray-b5">
-                <aside class="items-center grid-flow-col">
-                    <p>© 2023 pizza.All right reserved</p>
+                <aside class="items-center grid-flow-col w-full">
+                    <p class="w-full text-center md:text-left">© 2023 pizza.All right reserved</p>
                 </aside>
                 <nav class="grid-flow-col gap-10 md:place-self-center md:justify-self-end">
                     <a href="">Privacy</a>
@@ -345,7 +384,17 @@
         </footer>
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>
 
 </html>
