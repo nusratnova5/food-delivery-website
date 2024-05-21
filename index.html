@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
-    <header>
+<body class="container ">
+    <header class="w-3/4 mx-auto mb-10">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -23,74 +26,322 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
+                        <li><a>Restaurent</a></li>
+                        <li><a>Recipes</a></li>
+                        <li><a>About</a></li>
                         <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
+                            <details>
+                                <summary>Page</summary>
+                                <ul class="p-2 font-sm">
+                                    <li><a class="text-nowrap">Page 1</a></li>
+                                    <li><a class="text-nowrap">Page 2</a></li>
+                                </ul>
+                            </details>
                         </li>
-                        <li><a>Item 3</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-xl">🍕</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
+                    <li><a>Restaurent</a></li>
+                    <li><a>Recipes</a></li>
+                    <li><a>About</a></li>
                     <li>
                         <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
+                            <summary>Page</summary>
+                            <ul class="p-2 font-sm">
+                                <li><a class="text-nowrap">Page 1</a></li>
+                                <li><a class="text-nowrap">Page 2</a></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>Item 3</a></li>
+
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
+            <div class="navbar-end gap-2">
+                <a class="btn bg-white margin-none border-none shadow-none">Login</a>
+                <a class="btn bg-red rounded-full">Button</a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="w-3/4 mx-auto">
+        <!-- FIRST SECTION -->
+        <div class="flex items-center p-5 mb-20">
+            <div class="p-5">
+                <p class="text-4xl font-bold">Your Favorite Food <br />Delivery Partner</p>
+                <p>The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven
+                    to your doorstep. </p>
+                <div class="pt-3">
+                    <div class="flex justify-between items-center bg-gray-100 rounded-full">
+                        <div class="">
+                            <input type="text" placeholder="Enter your delivery location"
+                                class="appearance-none bg-transparent border-none placeholder-gray-500 px-4 py-2 rounded-l-full focus:outline-none">
+                        </div>
+                        <div>
+                            <button
+                                class="primary-color text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex pt-5">
+                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
+                            <div class="flex justify-center gap-2">
+                                <p> <img src='images/First section/Apple logo.png' alt="">
+                                </p>
+                                <div class="text-black-09">
+                                    <p class="text-xs">Download on the</p>
+                                    <p class="text-xl font-bold">App Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
+                            <div class="flex justify-center gap-2">
+                                <p> <img src='images/First section/Google Play logo.png' alt="">
+                                </p>
+                                <div class="text-black-09">
+                                    <p class="text-xs">GET IT ON</p>
+                                    <p class="text-xl font-bold">Google Play</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-pink rounded-3xl">
+                <img src='images/First section/img1.png' alt="">
+            </div>
+        </div>
+        <!-- SECOND SECTION -->
+        <div class="mb-20 grid justify-items-center">
+            <div class="text-center">
+                <p class="text-3xl font-semibold">MORE THAN <span class="text-primary">10,000</span> DISHES <br />TO
+                    ORDER!</p>
+                <p>Welcome to The Biggest Network of Food Ordering & Delivery</p>
+            </div>
+            <div class="flex m-2 gap-5">
 
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍕</p>
+                        <p class="px-5 py-2">Pizza</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍔</p>
+                        <p class="px-5 py-2">Burger</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍣</p>
+                        <p class="px-5 py-2">Sushi</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="">
+                        <p class="p-5 text-2xl font-medium">Find <span class="text-primary">deals</span>, <span
+                                class="text-green">free delivery</span>, and more from our restaurant partners.</p>
+
+                    </div>
+                    <div class="place-self-end">
+                        <img src='images/Second section/Illustrations.png' class="mt-2">
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="flex gap-5">
+                <div class="w-1/2">
+                    <img src='images/Second section/Vector.png' class="m-5">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nemo perspiciatis possimus
+                        ratione, vero reprehenderit omnis veniam sapiente. Temporibus, illum ex! Saepe, rem. Nam
+                        doloremque alias nobis ad voluptatum. Ex!</p>
+                </div>
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍝</p>
+                        <p class="px-5 py-2">Pasta</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🥗</p>
+                        <p class="px-5 py-2">Salad</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-3xl text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-full">🍰</p>
+                        <p class="px-5 py-2">Desserts</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- THIRD SECTION -->
+        <div class="mb-20 grid justify-items-center">
+            <div class="p-5">
+                <p class="text-black-2e text-2xl font-semibold">How To Order?</p>
+            </div>
+            <div class="flex gap-5">
+                <div>
+                    <p class="text-primary text-2xl font-bold">01</p>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">📍</p>
+                        <p class="px-5 ">Choose your location</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-primary text-2xl font-bold">02</p>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🙇🏻‍♂️</p>
+                        <p class="px-5 py-2">Choose what to eat</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-primary text-2xl font-bold">03</p>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🍔</p>
+                        <p class="px-5 py-2">May your first order</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-primary text-2xl font-bold">04</p>
+                    <div class="grid justify-items-center w-44 h-56 bg-gray-fa rounded-lg text-center">
+                        <p class="text-3xl w-20 h-20 p-5 bg-white m-5 rounded-lg">🏠</p>
+                        <p class="px-5 py-2">Now your food in way</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOURTH SECTION -->
+        <div class="mb-20 grid justify-items-center text-center">
+            <p class="text-light-black text-3xl p-5 font-bold">Our Clients Feedback</p>
+            <p class="text-dark-black pb-5">The food at your doorstep. Why starve when you have us. You hunger <br>
+                partner. Straight out of the oven to
+                your doordtep. </p>
+            <div class="m-7">
+                <img src='images/Fourth Section/Vector.png' alt="">
+            </div>
+            <p class="text-dark-black font-semibold p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore rerum<br> reiciendis laborum ducimus,
+                dolore adipisci possimus non voluptatum dolorum laudantium <br>consequuntur ad hic laboriosam quae iure
+                quas
+                dolorem quisquam voluptatem?</p>
+            <div>
+                <p class="text-light-black font-semibold">Mitchell Marsh</p>
+                <p class="text-gray-61 pb-5">CEO, Bexon Agency</p>
+            </div>
+            <div class="flex gap-5 ">
+                <div class="rounded-full bg-gray-E2 p-2">
+                    <img src='images/Fourth Section/left.png' alt="">
+                </div>
+                <div class="rounded-full primary-color p-2">
+                    <img src='images/Fourth Section/right.png' alt="">
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <footer class="footer p-10 bg-base-200 text-base-content">
-            <aside>
-                🍕
-                <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
-            </aside>
-            <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </nav>
+        <!-- NEWSLETTER -->
+        <div class="h-72 bg-pink grid content-center">
+            <div class="flex justify-around items-center">
+                <div class="font-pop">
+                    <p class="text-3xl font-bold ">Subscribe our newsletter</p>
+                    <p>Browse local restaurants and businesses for delivery by entering your address blow.</p>
+                </div>
+                <div class="flex justify-between items-center bg-gray-100 rounded-full">
+                    <div class="">
+                        <input type="text" placeholder="Enter your email address..."
+                            class="appearance-none bg-transparent border-none placeholder-gray-500 px-4 py-2 rounded-l-full focus:outline-none">
+                    </div>
+                    <div>
+                        <button
+                            class="primary-color text-white font-semibold px-6 py-2 rounded-full hover:bg-red-600 focus:outline-none">
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex-row p-10 bg-dark-black">
+            <div class="footer mb-20">
+                <aside class="">
+                    <p class="text-4xl">🍕</p>
+                    <div class="flex">
+                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
+                            <div class="flex justify-center gap-2">
+                                <p> <img src='images/First section/Apple logo.png' alt="">
+                                </p>
+                                <div class="text-black-09">
+                                    <p class="text-xs">Download on the</p>
+                                    <p class="text-xl font-bold">App Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-f4 p-3 rounded-2xl mr-2">
+                            <div class="flex justify-center gap-2">
+                                <p> <img src='images/First section/Google Play logo.png' alt="">
+                                </p>
+                                <div class="text-black-09">
+                                    <p class="text-xs">GET IT ON</p>
+                                    <p class="text-xl font-bold">Google Play</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+                <nav>
+                    <h6 class="footer-title text-white">Quick links</h6>
+                    <a class="link link-hover text-gray-b5">Features</a>
+                    <a class="link link-hover text-gray-b5">Food Menu</a>
+                    <a class="link link-hover text-gray-b5">Offer</a>
+                    <a class="link link-hover text-gray-b5">Review</a>
+                    <a class="link link-hover text-gray-b5">Rider</a>
+
+                </nav>
+                <nav class="font-pop">
+                    <h6 class="footer-title text-white">Get to know us</h6>
+                    <a class="link link-hover text-gray-aa">Gift Cards</a>
+                    <a class="link link-hover text-gray-aa">DoorDash Stories</a>
+                    <a class="link link-hover text-gray-aa">LinkedIn</a>
+                    <a class="link link-hover text-gray-aa">Glassdoor</a>
+                    <a class="link link-hover text-gray-aa">Accessibility</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title text-white">News</h6>
+                    <a class="link link-hover text-gray-b5">Blog</a>
+                    <a class="link link-hover text-gray-b5">FAQ</a>
+                    <a class="link link-hover text-gray-b5">Lift Media</a>
+                    <a class="link link-hover text-gray-b5">Press</a>
+                    <a class="link link-hover text-gray-b5">Press kit</a>
+
+                </nav>
+                <nav class="font-pop">
+                    <h6 class="footer-title text-white">Contact</h6>
+                    <a class="link link-hover text-gray-aa">WhatsApp</a>
+                    <a class="link link-hover text-gray-aa">Support 24</a>
+                </nav>
+            </div>
+            <div class="footer mb-10 text-gray-b5">
+                <aside class="items-center grid-flow-col">
+                    <p>© 2023 pizza.All right reserved</p>
+                </aside>
+                <nav class="grid-flow-col gap-10 md:place-self-center md:justify-self-end">
+                    <a href="">Privacy</a>
+                    <a href="">Policy</a>
+                    <a href="">Terms</a>
+                    <a href="">Services</a>
+                </nav>
+            </div>
+
         </footer>
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
