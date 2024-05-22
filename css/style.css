@@ -11,12 +11,14 @@
 
     --gray-61: #616161;
     --gray-f4: #F4F4F4;
+    --gray-f6: #F6F6F6;
     --gray-b5: #B5B2B2;
     --gray-aa: #AAA7B1;
     --gray-fa: #FAFAFA;
     --gray-E2: #E2E2E2;
     --black-2e: #2E2C49;
     --black-09: #090909;
+    --black-32: #323232;
 }
 
 html {
@@ -34,6 +36,9 @@ html {
 .text-black-09 {
     color: var(--black-09);
 }
+.text-black-32{
+color: var(--black-32);
+}
 
 .bg-gray-E2 {
     background-color: var(--gray-E2);
@@ -41,6 +46,9 @@ html {
 
 .bg-gray-f4 {
     background-color: var(--gray-f4);
+}
+.bg-gray-f6{
+    background-color: var(--gray-f6);
 }
 
 .text-primary {
@@ -76,7 +84,7 @@ html {
 }
 
 .text-white {
-    color: var(--white-color);
+    color: var(--white-color)!important;
 }
 
 .bg-white {
@@ -90,9 +98,15 @@ html {
 .text-light-black {
     color: var(--light-black);
 }
+.text-lighter-black{
+    color: var(--lighter-black);
+}
 
 .text-dark-black {
     color: var(--dark-black);
+}
+.text-gray-black{
+    color: var(--gray-black);
 }
 
 .text-gray-61 {
@@ -165,5 +179,8 @@ body {
     
     .swiper-button-prev {
         left: 43%;
+    }
+    html {
+        font-size: 13px;
     }
 }
